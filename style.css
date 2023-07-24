@@ -1,0 +1,99 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, main, footer {
+    padding: 20px;
+    
+/* Inicio-header Styles */
+}
+header {
+    background-color: cadetblue;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+header h1 {
+    color: chartreuse;
+}
+
+header button {
+    background-color: rgb(196, 255, 204);
+    border: solid rgb(148, 216, 146);
+    padding: 5px 10 px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+
+header button:hover {
+    background-color: black;
+    color: blanchedalmond;
+    cursor: pointer;
+
+}
+/* Inicio-main Styles */
+main {
+    background-color: rgb(231, 183, 166);
+    min-height: 100vh;  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: start;
+    justify-items: center;
+    gap: 20px;
+}
+
+main div  {
+background-color: rgb(205, 188, 231);
+width: 250px;
+padding: 20px;
+text-align: center;
+border-radius: 50px;
+
+
+}
+
+img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+
+/* Inicio-footer Styles */
+footer { 
+    background-color: cadetblue;
+    
+}
+
+footer nav ul {
+display: flex;
+justify-content: space-around;
+gap: 20px;
+list-style: none;
+font-weight: 1000;
+}
+
+footer nav ul a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+/* media queris for tablets (puntos de quiebre)*/
+
+@media(max-width: 850px) {
+    main
+     {grid-template-columns: 1fr 1fr ;}
+}
+
+@media(max-width: 650px) {
+    main
+     {grid-template-columns: 1fr ;}
+}
